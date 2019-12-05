@@ -3,13 +3,8 @@ import Router from 'vue-router';
 import Auth from './auth';
 import Home from './components/home';
 
-import Dashboard from '@/views/dashboard';
 import SignIn from '@/views/signin';
-
-// import Settings from '@/views/settings';
-
-// import UserAccount from '@/views/settings/user/account';
-// import UserProfile from '@/views/settings/user/profile';
+import BankIndex from '@/views/banks';
 
 Vue.use(Router);
 
@@ -38,11 +33,9 @@ export default new Router({
             children: [
                 {
                     path: '',
-                    component: Dashboard,
-                    // beforeEnter: showMenu
+                    component: BankIndex
                 }
-            ],
-            // beforeEnter: authenticatedGuard
+            ]
         },
         {
             path: '/signin',
