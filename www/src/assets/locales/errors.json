@@ -1,0 +1,12 @@
+{
+    "en": {
+        "errors": {
+            "lorem": "lipsum en"
+        }
+    },
+    "pt-BR": {
+        "errors": {
+            "lorem": "lipsum br"
+        }
+    }
+}

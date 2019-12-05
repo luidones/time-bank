@@ -1,0 +1,78 @@
+{
+    "en": {
+        "formats": {
+            "date": {
+                "label": "mm/dd/yyyy",
+                "value": "mm/dd/yyyy",
+                "fns": "MM/DD/YYYY",
+                "mask": "##/##/####"
+            },
+            "datetime": {
+                "label": "mm/dd/yyyy hh:mm",
+                "value": "mm/dd/yyyy HH:MM",
+                "fns": "MM/DD/YYYY hh:mm",
+                "mask": "##/##/#### ##:##"
+            },
+            "fulldatetime": {
+                "label": "mm/dd/yyyy hh:mm:ss",
+                "value": "mm/dd/yyyy HH:MM:SS",
+                "fns": "MM/DD/YYYY hh:mm:ss",
+                "mask": "##/##/#### ##:##:##"
+            },
+            "fulltime": {
+                "label": "hh:mm:ss",
+                "value": "HH:MM:SS",
+                "fns": "hh:mm:ss",
+                "mask": "##:##:##"
+            },
+            "time": {
+                "label": "hh:mm",
+                "value": "HH:MM",
+                "fns": "hh:mm",
+                "mask": "##:##"
+            },
+            "money": {
+                "decimal": ".",
+                "thousands": ","
+            }
+        }
+    },
+    "pt-BR": {
+        "formats": {
+            "date": {
+                "label": "dd/mm/aaaa",
+                "value": "dd/mm/yyyy",
+                "fns": "DD/MM/YYYY",
+                "mask": "##/##/####"
+            },
+            "datetime": {
+                "label": "dd/mm/aaaa hh:mm",
+                "value": "dd/mm/yyyy HH:MM",
+                "fns": "DD/MM/YYYY hh:mm",
+                "mask": "##/##/#### ##:##"
+            },
+            "fulldatetime": {
+                "label": "dd/mm/aaaa hh:mm:ss",
+                "value": "dd/mm/yyyy HH:MM:SS",
+                "fns": "DD/MM/YYYY hh:mm:ss",
+                "mask": "##/##/#### ##:##:##"
+            },
+            "fulltime": {
+                "label": "hh:mm:ss",
+                "value": "HH:MM:SS",
+                "fns": "hh:mm:ss",
+                "mask": "##:##:##"
+            },
+            "time": {
+                "label": "hh:mm",
+                "value": "HH:MM",
+                "fns": "hh:mm",
+                "mask": "##:##"
+            },
+            "money": {
+                "decimal": ",",
+                "thousands": "."
+            }
+        }
+    }
+}

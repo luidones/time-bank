@@ -1,0 +1,108 @@
+.sidebar-menu li a {
+    padding-left: 12px;
+}
+.sidebar-menu svg {
+    margin-right: 10px;
+}
+
+@submenu-width: 200px;
+@submenu-bg: @sidebar-light-bg;
+@submenu-border: @gray-lte;
+@submenu-header: lighten(@sidebar-light-color, 35%);
+@submenu-header-border: lighten(@sidebar-light-color, 50%);
+@submenu-item: #444;
+@submenu-active: #222D32;
+@submenu-active-bg: @gray-lte;
+@submenu-subitem: #eee;
+
+.has-sub-menu .content-header,
+.has-sub-menu .content {
+    margin-left: @submenu-width;
+}
+
+.sidebar-collapse .submenu {
+    display: list-item;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    bottom: 51px;
+    width: @submenu-width;
+    background-color: @submenu-bg;
+    border-right: 1px solid;
+    border-right-color: @submenu-border;
+    margin: 0;
+    padding: 0;
+
+    > li {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        > a {
+          padding: 12px 5px 12px 12px;
+          color: @submenu-item;
+          display: block;
+          > svg {
+              color: @submenu-item;
+              fill: @submenu-item;
+              margin-right: 4px;
+          }
+          border-left: 3px solid @submenu-bg;
+        }
+        &.subitem > a {
+            padding-left: 24px;
+            background: @submenu-subitem;
+        }
+        .label,
+        .badge {
+          margin-right: 5px;
+        }
+        .badge {
+          margin-top: 3px;
+        }
+
+        &.logo {
+            text-align: center;
+            margin: 18px 0 14px;
+            > img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        &.header {
+          color: @submenu-header;
+          padding: 12px 15px 11px 15px;
+          // font-size: 12px;
+          > span {
+              display: block;
+              border-bottom: 1px solid;
+              border-bottom-color: @submenu-header-border;
+          }
+        }
+
+        &:hover > a,
+        > a.active {
+            color: @submenu-active;
+            background: @submenu-active-bg;
+        }
+
+        &:hover > a {
+            border-left-color: @submenu-active-bg;
+        }
+
+        > a.active {
+            border-left-color: @submenu-active;
+        }
+
+
+
+        // > .treeview-menu {
+        //   background: @sidebar-light-submenu-bg;
+        // }
+    }
+}
