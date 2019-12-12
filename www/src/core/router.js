@@ -5,6 +5,7 @@ import Home from './components/home';
 
 import SignIn from '@/views/signin';
 import BankIndex from '@/views/banks';
+import MemberIndex from '@/views/members';
 
 Vue.use(Router);
 
@@ -34,6 +35,10 @@ export default new Router({
                 {
                     path: '',
                     component: BankIndex
+                },
+                {
+                    path: '/member/:id',
+                    component: MemberIndex
                 }
             ]
         },

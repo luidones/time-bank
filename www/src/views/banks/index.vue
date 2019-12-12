@@ -48,7 +48,7 @@ ul.members > li {
                 <li v-for="r in results">
                     <div class="info-box">
                         <div class="info-box-content">
-                            <strong>{{ r.name }}</strong>
+                            <strong><router-link :to="`/member/${r.id}`">{{ r.name }}</router-link></strong>
                             <span>{{ $t('Member since') }} {{ r.memberSince | date() }}</span>
                             <span>{{ r.changedHours }} {{ $t('changed hours') }}</span>
                             <span>{{ r.reviews }} {{ $t('reviews') }}</span>
@@ -81,6 +81,7 @@ export default {
             bankName: 'Santos e Região',
             searchPattern: '',
             results: [{
+                id: 1,
                 name: 'Joãozinho Trinta',
                 memberSince: new Date('2019-01-01'),
                 changedHours: 80,
@@ -91,6 +92,7 @@ export default {
                     { name: 'Psicoterapia', rating: 4 }
                 ]
             }, {
+                id: 2,
                 name: 'Walter Kovacs',
                 memberSince: new Date('2019-01-01'),
                 changedHours: 40,
