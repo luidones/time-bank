@@ -12,11 +12,6 @@ export class TesteController {
     async meuMethod() {
         const users = await this.db.entities.user.findAll();
 
-        return users.map(u => u.fullName);
-    }
-
-    @Server.post('/')
-    async nome({ params, body, user, query }) {
-
+        return users.map(u => u.name);
     }
 }
