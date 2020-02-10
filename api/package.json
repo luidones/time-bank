@@ -1,0 +1,31 @@
+{
+    "scripts": {
+        "start": "gulp",
+        "test": "jest --watchAll --runInBand"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.1.2",
+        "@babel/plugin-proposal-class-properties": "^7.1.0",
+        "@babel/plugin-proposal-decorators": "^7.1.2",
+        "@babel/polyfill": "^7.0.0",
+        "@babel/preset-env": "^7.1.0",
+        "babel-jest": "^24.7.1",
+        "dotenv": "^8.0.0",
+        "gulp": "^4.0.0",
+        "gulp-babel": "^8.0.0-beta.2",
+        "jest": "^24.7.1"
+    },
+    "dependencies": {
+        "aws-sdk": "^2.596.0",
+        "bcryptjs": "^2.4.3",
+        "jsonwebtoken": "^8.3.0",
+        "mongodb": "^3.3.0-beta2",
+        "pg": "^7.5.0",
+        "pg-hstore": "^2.3.2",
+        "restify": "^7.2.1",
+        "restify-cors-middleware": "^1.1.1",
+        "restify-jwt-community": "^1.0.12",
+        "sequelize": "^4.39.1",
+        "uuid": "^3.3.2"
+    }
+}
