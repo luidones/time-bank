@@ -1,6 +1,6 @@
 <template>
     <span :title="value">
-        <fa fixed-width v-for="s in fullStars" icon="star" /><fa fixed-width v-if="hasHalfStar" icon="star-half-alt" /><fa fixed-width v-for="s in emptyStars" :icon="['far', 'star']" />
+        <fa fixed-width v-for="(s, i) in fullStars" :key="i" icon="star" /><fa fixed-width v-if="hasHalfStar" icon="star-half-alt" /><fa fixed-width v-for="(s, i) in emptyStars" :key="i" :icon="['far', 'star']" />
     </span>
 </template>
 
