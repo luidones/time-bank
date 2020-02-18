@@ -18,9 +18,9 @@ export class Transaction {
         }
     };
 
-    hooks: {
+    hooks = {
         beforeSave: function(transaction) {
             transaction.hours = Math.floot(transaction.hours);
         }
-    }
+    };
 }

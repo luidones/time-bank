@@ -25,7 +25,7 @@ export class Review {
         }
     };
 
-    associations: {
+    associations = {
         belongsTo: {
             user: { as: 'reviewer', foreignKey: 'reviewerId' }
         }

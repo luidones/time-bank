@@ -23,7 +23,7 @@ export class Talent {
         }
     };
 
-    associations: {
+    associations = {
         belongsTo: {
             user: { foreignKey: 'userId' }
         }
