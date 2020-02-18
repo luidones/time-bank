@@ -1,4 +1,5 @@
 import Sequelize from 'sequelize';
+import { Roles } from './roles';
 
 export class User {
     identity = 'user';
@@ -30,6 +31,13 @@ export class User {
             allowNull: false,
             defaultValue: true
         },
+        role: {
+            type: Sequelize.INTEGER,
+            allowNull: false,
+            validate: {
+                isIn: [Object.values(Roles)]
+            }
+        },
         fullName: {
             type: Sequelize.VIRTUAL(Sequelize.STRING(101)),
             get: function() {
@@ -38,11 +46,11 @@ export class User {
         }
     };
 
-    // associations = {
-    //     hasMany: {
-    //         membership: { foreignKey: 'userId', as: 'associations' }
-    //     }
-    // };
+    associations = {
+        hasMany: {
+            account: { foreignKey: 'userId', as: 'accounts' }
+        }
+    };
 
     methods = {
         addFault: async function () {
